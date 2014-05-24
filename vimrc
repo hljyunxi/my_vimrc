@@ -252,13 +252,13 @@ autocmd BufNewFile *.sh,*.py exec ":call SetTitle()"
 func SetTitle()
     if &filetype == 'sh'
         call setline(1, "\#!/bin/sh")
-        call append(line("."), "\# Author: gaopenghigh<gaopenghigh@gmail.com>") 
+        call append(line("."), "\# Author: chenyunyun<hljyunxi@gmail.com>") 
         call append(line(".")+1, "")
         :8
     elseif &filetype == 'python'
         call setline(1, "\#!/usr/bin/python")
-        call append(line("."), "\# -*- coding: utf-8 -*-")
-        call append(line(".")+1, "\# Author: gaopenghigh<gaopenghigh@gmail.com>") 
+        call append(line("."), "\#coding: utf8")
+        call append(line(".")+1, "\# Author: chenyunyun<chenyunyun@gmail.com>") 
         call append(line(".")+2, "")
         :8
     endif
